@@ -392,10 +392,8 @@
 }
 
 .dialog__close-button {
-  grid-column: 1/-1;
-  grid-row: 2/3;
-  min-block-size: 38px;
-  font-size: 14px;
+    block-size: 36px;
+    inline-size: 293px;
 }
 
 @media (width <= 427px) {
