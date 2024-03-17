@@ -209,6 +209,7 @@
 }
 
 .card__image-wrapper {
+  position: relative;
   inline-size: 100%;
   border: 2px solid var(--accent-color);
   border-left: none;
