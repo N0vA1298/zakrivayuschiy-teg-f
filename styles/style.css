@@ -14,8 +14,6 @@
 
 */
 
-/* COMPONENT START*/
-
 .content-sizing {
   inline-size: var(--width);
   margin: 0 auto;
@@ -55,8 +53,6 @@
   outline: none;
   box-shadow: 2px 2px var(--accent-color);
 }
-
-/* COMPONENT END*/
 
 .page {
   font-family: var(--accent-font);
@@ -186,8 +182,6 @@
   transform: scaleX(1);
 }
 
-/* MAIN CONTENT */
-
 .main {
   display: grid;
   gap: 50px;
@@ -228,34 +222,6 @@
   block-size: 100%;
   object-fit: cover;
   object-position: center;
-}
-
-.card__img_filter-saturate {
-  filter: saturate(10%);
-}
-
-.card__img_filter-grayscale {
-  filter: grayscale(10%) hue-rotate(221deg);
-}
-
-.card__img_filter-hue-rotate {
-  filter:hue-rotate(-90deg) saturate(50%);
-}
-
-.card__img_filter-sepia {
-  filter: sepia(20%) hue-rotate(-90deg) invert(10%);
-}
-
-.card__img_filter-blur {
-  filter: blur(1px) invert(100%) brightness(0.9);
-}
-
-.card__img_filter-saturate-brightness {
-  filter: saturate(150%) brightness(0.8);
-}
-
-.card__img_filter-brightness {
-  filter: brightness(70%) hue-rotate(314deg) blur(1px);
 }
 
 .card__img-watermark {
@@ -333,8 +299,6 @@
   line-height: 12.6px;
 }
 
-/*  */
-
 .save-section {
   display: flex;
   justify-content: center;
@@ -364,8 +328,6 @@
   font-size: 14px;
   line-height: 12.6px;
 }
-
-/* DIALOG */
 
 .save__dialog {
   grid-template-columns: 39px 1fr;
