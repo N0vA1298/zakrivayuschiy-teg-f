@@ -8,7 +8,6 @@
     --accent-color: #00CC14;
     --hover-text:#00CC14;
     --bg-color: #000000;
-    --heart-color: #FF0000;
     --wght-heading: 785; 
     --wght-text: 465; 
     --bg-gradient: repeating-linear-gradient(to right, #000 0 2px, rgb(0 0 0/ 0) 2px 4px);
@@ -20,35 +19,18 @@
     --accent-color: #000000;
     --bg-color: #ffffff;
     --hover-text:#ffffff;
-    --heart-color: #FF0000;
     --wght-heading: 700; 
     --wght-text: 400; 
     --bg-gradient: repeating-linear-gradient(to right, #d3d3d3 0 2px, rgb(211 211 211/ 0) 2px 4px);
     --grid-gradient: repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgb(211 211 211/ 0) 2px 4px);
     --overlay-gradient: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   }
-
-
-@media (prefers-color-scheme:light) {
-  :root {
-    --accent-color: #000000;
-    --hover-text:#ffffff;
-    --bg-color: #ffffff;
-    --heart-color: #FF0000;
-    --wght-heading: 700; 
-    --wght-text: 400; 
-    --bg-gradient: repeating-linear-gradient(to right, #d3d3d3 0 2px, rgb(211 211 211/ 0) 2px 4px);
-    --grid-gradient: repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgb(211 211 211/ 0) 2px 4px);
-    --overlay-gradient: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
-  }
-}
 
 @media (prefers-color-scheme:dark) {
   :root {
     --accent-color: #00CC14;
     --bg-color: #000000;
     --hover-text:#00CC14;
-    --heart-color: #FF0000;
     --wght-heading: 785; 
     --wght-text: 465; 
     --bg-gradient: repeating-linear-gradient(to right, #000 0 2px, rgb(0 0 0/ 0) 2px 4px);

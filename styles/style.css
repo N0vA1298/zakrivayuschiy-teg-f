@@ -28,6 +28,8 @@
   border: 2px solid var(--accent-color);
   transition: box-shadow 0.3s ease;
   cursor: pointer;
+  font-size: 14px;
+  line-height: 12.6px;
 }
 
 .button::before {
@@ -56,7 +58,7 @@
 }
 
 .page {
-  font-family: var(--accent-font);
+  font-family: var(--main-font, 'Inter');
   font-weight: 400;
   font-variation-settings: "wght" var(--wght-text);
   font-size: 1.125rem; /* 18px */
@@ -72,12 +74,6 @@
   color: var(--accent-color);
 }
 
-@supports (font-variation-settings: normal) {
-  .page {
-      font-family: var(--main-font);
-  }
-} 
-
 .header {
   display: grid;
   place-content: center;
@@ -88,9 +84,10 @@
 }
 
 .header__logo {
-  font-size: clamp(49px, 2.7104rem + 1.5023vw, 65px);
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vi, 4.0625rem);
   font-weight: inherit;
   text-decoration: none;
+  line-height: 65px;
 }
 
 .header__logo:focus,
@@ -104,6 +101,7 @@
   font-size: clamp(14px, 0.6769rem + 0.8451vw, 23px);
   font-weight: inherit;
   text-transform: uppercase;
+  line-height: 23px;
 }
 
 .header__theme-menu {
@@ -133,6 +131,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  line-height: 14px;
 }
 
 .theme-menu__button:hover {
@@ -206,21 +205,21 @@
   padding: 5px 10px;
   font-variation-settings: "wght" var(--wght-heading);
   font-size: inherit;
+  line-height: 21.78px;
 }
 
 .card__image-wrapper {
-  position: relative;
   inline-size: 100%;
-  padding-block-start: 100%;
   border: 2px solid var(--accent-color);
-  border-collapse: collapse;
+  border-left: none;
+  border-right: none;
+  aspect-ratio: 1 / 1;
 }
 
 .card__img {
-  position: absolute;
-  inset: 0;
+  display: block;
   inline-size: 100%;
-  block-size: 100%;
+  block-size: var(--width);
   object-fit: cover;
   object-position: center;
 }
@@ -290,7 +289,6 @@
   display: flex;
   justify-self: end;
   gap: 4px;
-  max-block-size: 63px;
   padding: 0 25px 25px;
 }
 
@@ -318,14 +316,16 @@
   mix-blend-mode: difference;
 }
 
+.button__text-dialog {
+  text-transform: uppercase;
+}
+
 .card__like-button {
   display: flex;
   justify-content: center;
   align-items: center;
   inline-size: 130px;
-  block-size: 38px;
-  font-size: 14px;
-  line-height: 12.6px;
+  padding: 8px;
 }
 
 .save-section {
@@ -353,9 +353,6 @@
   inline-size: 100%;
   padding: 0;
   min-block-size: 55px;
-  max-block-size: 84px;
-  font-size: 14px;
-  line-height: 12.6px;
 }
 
 .save__dialog {
@@ -414,5 +411,16 @@
   .save-button__icon {
     inline-size: 28px;
     block-size: 28px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__title {
+    font-size: clamp(1.875rem, -5.0341rem + 34.5455vi, 3.0625rem);
+    line-height: 49px;
+  }
+
+  .header__title {
+    line-height: 14px;
   }
 }

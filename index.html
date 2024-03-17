@@ -22,7 +22,7 @@
   </head>
   <body class="page">
     <header class="header content-sizing">
-      <a class="header__logo" href="#!">&lt;/HTML&gt;</a>
+      <a class="header__logo">&lt;/HTML&gt;</a>
       <h1 class="header__title">закрывающий тег</h1>
 
       <nav class="theme-menu header__theme-menu">
@@ -58,13 +58,13 @@
             Фритрек и нулевой спринт: Подготовка к работе
           </h2>
           <div class="card__image-wrapper">
+            <span class="card__img-watermark">&lt;/HTML&gt;</span>
             <img
               class="card__img"
               loading="lazy"
               src="./images/card-image/start.jpg"
               alt="фото человека перед дорогой"
             />
-            <span class="card__img-watermark">&lt;/HTML&gt;</span>
           </div>
           <div class="card__text-wrapper">
             <p class="card__text">
@@ -608,13 +608,22 @@
           </svg>
           <h2 class="dialog__title">Вставьте дискету, чтобы продолжить</h2>
 
-          <button
+
+          <form method="dialog">
+            <button class="dialog__close-button button" type="submit">
+              <span class="button__text button__text-dialog">ок</span>
+            </button>
+          </form>
+
+
+
+          <!--<button
             class="dialog__close-button button"
             type="button"
             onclick="window['save-dialog'].close();"
           >
             <span class="button__text">OK</span>
-          </button>
+          </button>-->
         </dialog>
       </section>
     </main>

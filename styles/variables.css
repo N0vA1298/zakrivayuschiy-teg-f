@@ -11,7 +11,7 @@
     --hover-text:#ffffff;
     --wght-heading: 700; 
     --wght-text: 400;
-    --width: clamp(375px, 100%, 700px);
+    --width: clamp(23.1875rem, 16.0352rem + 30.5164vi, 43.5rem);
   }
   
   @media (width <= 375px) {
