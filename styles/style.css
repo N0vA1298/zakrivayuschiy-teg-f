@@ -84,7 +84,7 @@
 }
 
 .header__logo {
-  font-size: clamp(3.062rem, 2.71rem + 1.503vw, 4.063rem);;
+  font-size: clamp(3.062rem, 2.71rem + 1.503vw, 4.063rem);
   font-weight: inherit;
   text-decoration: none;
   line-height: 1;
@@ -294,6 +294,8 @@
 }
 
 .card__icon-button {
+  padding: 0;
+  max-height: 38px;
   background-color: transparent;
   font-weight: inherit;
   cursor: pointer;
@@ -402,10 +404,15 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 375px) {
+@media (width <=375px) {
+
+  .header__logo {
+    font-size: clamp(1.875rem, -5.0341rem + 34.5455vi, 3.0625rem);
+    line-height: 1.35;
+  }
 
   .header__title {
-    line-height: 14px;
+    line-height: 1.4;
   }
 
   .card__img-watermark {

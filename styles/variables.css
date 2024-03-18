@@ -14,7 +14,7 @@
     --width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
   }
   
-  @media (min-width: 320px) and (max-width:375) {
+  @media (max-width<=375px) {
     
     :root{
     --width: 100%;
