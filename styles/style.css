@@ -63,7 +63,6 @@
   font-variation-settings: "wght" var(--wght-text);
   font-size: 1.125rem; /* 18px */
   padding: 100px 0;
-  min-inline-size: 375px;
   max-inline-size: 100vw;
   min-block-size: 100dvb;
   background-color: var(--bg-color);
@@ -408,11 +407,6 @@
 
   .header__logo {
     font-size: clamp(1.875rem, -5.0341rem + 34.5455vi, 3.0625rem);
-    line-height: 1.35;
-  }
-
-  .header__title {
-    line-height: 1.4;
   }
 
   .card__img-watermark {
