@@ -11,12 +11,12 @@
     --hover-text:#ffffff;
     --wght-heading: 700; 
     --wght-text: 400;
-    --width: clamp(23.1875rem, 16.0352rem + 30.5164vi, 43.5rem);
+    --width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
   }
   
-  @media (width <= 375px) {
+  @media (min-width: 320px) and (max-width:375) {
     
     :root{
-    --width: 100vw;
+    --width: 100%;
   }
   }
